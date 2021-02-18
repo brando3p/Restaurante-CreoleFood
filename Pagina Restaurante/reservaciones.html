@@ -1,0 +1,193 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon"  type="image/png" href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revervaciones</title>
+    <link rel="stylesheet" href="css/estilo2.css" type="text/css"> 
+</head>
+
+<body>
+    <div class="login" ><button  class="button1" ><a href="loginvista.html">Ingresar</a></button></div>
+     <header class="header" id="inicio">
+        <nav class="menu">
+               <ul class="alfa">
+               <li><div ><img  class="logo" id="logo" src=img/logo.jpeg></div></li>
+                <li><a href="index.html"class="cuadro">Inicio</a></li>
+                <li><a href="" class="cuadro">Menu</a>
+                 <ul>
+                     <li><a href="comidas.html">Comida</a></li>
+                     <li><a href="postres.html">Postre</a></li>
+                     <li><a href="bebidas.html">Bebida</a></li>
+                </ul>
+                </li>
+               <li> <a href="reservaciones.html" class="cuadro">Reservacion</a></li>
+                <li><a href="reservaciones.html" class="cuadro">Contacto</a></li>
+                </ul>
+        </nav>
+    
+
+        
+        
+        
+        
+    </header>
+    <!--Un salto de linea con un div-->
+    <div class="linea"></div>
+    <!--frase introductoria para las reservaciones-->
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>Haz tus reservaciones</h1>
+            <p>No dejes que otras personas lo agan antes que tú</p>
+        </div>
+        <!--se estable el codgido para hacer las reservaciones-->
+        <div class="reservas">
+                <input type="date" value="" class="box" id="fecha">
+                <select name="hora" class="box" id="hora">
+                    <option value=""></option>
+                    <option value="11am">11:00am</option>
+                    <option value="12pm">12:00pm</option>
+                    <option value="13pm">13:00pm</option>
+                    <option value="14pm">14:00pm</option>
+                    <option value="15pm">15:00pm</option>
+                    <option value="16pm">16:00pm</option>
+                    <option value="17pm">17:00pm</option>
+                    <option value="18pm">18:00pm</option>
+                    <option value="19pm">19:00pm</option>
+                </select>
+                <select name="#personas" class="box" id="personas">
+                    <option value=""></option>
+                    <option value="1">1 Persona</option>
+                    <option value="2">2 Personas</option>
+                    <option value="3">3 Personas</option>
+                    <option value="4">4 Personas</option>
+                    <option value="5">5 Personas</option>
+                    <option value="6">6 Personas</option>
+                </select>
+                <input type="button" class="box" value="Reservar" onclick="guardarDatos();">
+        </div>
+    </div>
+    <!--Un salto de linea con un div-->
+    <div class="linea"></div>
+    <!--Tabal de reservaciones-->
+    <div class="tabla_reservas">
+        <br>
+        <table id="table">
+            <tr>
+                <td>Fecha</td>
+                <td>Hora</td>
+                <td>Personas</td>
+            </tr>
+        </table>
+    </div>
+    <div class="borrar_reservas">
+        <input type="button" class="box" value="Borrar" onclick="borrarDatos();">
+    </div>
+    <!--Un salto de linea con un div-->
+    <div class="linea"></div>
+    <!--Imagen central-->
+    <div class="fondo"></div>
+    <!--Un salto de linea con un div-->
+    <div class="linea"></div>
+
+    <!--Sección de contacto e informacion-->
+    <div class="contenedor_2">
+        <div class="informacion">
+            <div class="item principal">"Amamos la comida tanto como tú"</div>
+            <div class="iten telefono">Tel:123 456 6780</div>
+            <div class="iten correo">info@creolefood.com</div>
+            <div class="iten direccion">San Isidro, CA 98456</div>
+        </div>
+        <div class="contacto">
+            <form class="form_contac">
+                <div class="dato">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="contac">
+                </div>
+                <div class="dato">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="contac">
+                </div>
+                <div class="dato">
+                    <label for="mail">Email</label>
+                    <input type="email" id="contac">
+                </div>
+                <div class="dato">
+                    <label for="sujeto">Sujeto</label>
+                    <input type="text" id="contac">
+                </div>
+                <div class="comentario">
+                    <label for="mensaje" class="mensaje">Mensaje</label>
+                    <textarea name="" id="mensaje" cols="30" rows="1">
+                        </textarea>
+                </div>
+                <input type="button" value="Enviar" class="box enviar">
+            </form>
+        </div>
+    </div>
+    <!--Un salto de linea con un div-->
+    <div class="linea"></div>
+    <!--Se agrega el mapa de google-->
+    <div class="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3183044646603!2d-77.0197505858556!3d-12.090348046003038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9d1b91ef377%3A0x6e5e21ed59e892cb!2sSan%20Isidro%20Lima%20Per%C3%BA!5e0!3m2!1sen!2spe!4v1613413899488!5m2!1sen!2spe"
+            width="1225" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0">
+        </iframe>
+    </div>
+    <!--Un salto de linea con un div-->
+    <div class="linea"></div>
+    <div class="footer">
+        <div class="horario">
+            <div class="hor">Mon-Fri: 11am-16pm <br>        
+            Sat-Sun: 11am-19pm
+            </div>
+        </div>
+        <div class="direccion-f">
+            <div class="dir">San Isidro, CA 98456</div>
+        </div>
+        <div class="icons">
+            
+        </div>
+    </div>
+
+    <!--Un salto de linea con un div-->
+    <div class="linea"></div>
+    
+    <footer id="footer">
+        <div id="copy">
+            <div class="copyright">Copyright&copy; 2021 -CreolFood- Todos los derechos reservados</div>
+        </div>
+        <div class="contenedor-footer footer-content">
+                <div class="contact-us">
+                    <h2 class="brand"></h2>
+                    <p></p>
+                </div>
+                <div class="social-media">
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+    <script src="js/almacenamiento.js"></script>
+
+</body>
+
+</html>

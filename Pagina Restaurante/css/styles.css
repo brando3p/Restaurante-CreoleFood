@@ -1,0 +1,180 @@
+.logo{
+    width: 100px;
+    height: 100px;;
+    margin: 0px 15px ;
+    margin-right: 80px;
+}
+.login{
+    text-align: right;
+    margin: 20px;   
+}
+.button1{
+    width: 90px;
+    height: 25px;
+    text-transform:uppercase;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.cuadro{
+    width: 30vh;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.menu{
+    background-color:black;
+    width:  1180px;
+    height: 100px;
+    padding: 0px;
+    margin-left: 80px;
+}
+.opciones{
+    background-color: transparent;
+}
+.menu ul{ 
+    list-style:none;
+    margin:0;
+    padding:0;
+    height: 100%
+    
+}
+
+.menu ul a {
+ display:block;
+ color:#fff;
+ text-decoration:none;
+ font-weight:400;
+ font-size:16px;
+ padding:10px;
+ text-transform:uppercase;
+ letter-spacing:4px;
+}
+
+
+.menu ul li {
+ position:relative;
+ float:left;
+ margin:0;
+ padding:0;
+}
+
+.menu ul li:hover {
+  background:#5b78a7;
+}
+.menu ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+
+}
+
+.menu ul ul li {
+  float:none;
+  width:237px;
+    text-align: center;
+    background: black;
+}
+.menu ul ul a {
+  line-height:120%;
+  padding:10px 15px;
+    margin-left: 0px
+}
+
+
+.menu ul li:hover > ul {
+  display:block;
+}
+
+/*FOOTER*/
+footer{
+    background: black;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color:#764ba2;
+}
+
+@media screen and (max-width: 992px){
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    } 
+    
+}
+
+/*@media screen and (max-width: 992px){
+
+    .menu{
+        width: 80%;
+    display: block;
+    position: fixed;
+    top: 56px;
+    left: -100%;
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+    border-right: 1px solid rgba(204,204,204,0.5);
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.2);
+    background: #fff;
+    text-align: center;
+    } 
+    
+}*/
